@@ -2,7 +2,7 @@
 Worked example from API Days (New York) Omnichannel workshop
 Starting from a locally hosted instance of [privateGPT](https://github.com/zylon-ai/private-gpt), we will host and run [FreeClimb](https://www.freeclimb.com) application that provides the same experience via SMS, Voice, and (presuming available time) a simple web form.
 
-This repository includes a [simple example constructed ahead of time](apidays/example.py) as well as the code that was created during the actual process of the demo. In addition a [script](setup.sh) that attempts to setup privateGPT for the demo is provided, without any guarantees as to accuracy or functionality.
+This repository includes a [simple example constructed ahead of time](apidays/example.py) as well as the code that was created during the actual process of the demo. In addition a [script](setup.sh) that attempts to setup privateGPT for the demo is provided, without any guarantees as to accuracy or functionality (note, to get optimal functionality on a M1/2/3 Mac, you will need to follow the steps [here](https://docs.privategpt.dev/installation/getting-started/installation#llama-cpp-osx-gpu-support) to utilize the GPU).
 
 ## Steps to setup FreeClimb Application
 
