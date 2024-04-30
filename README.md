@@ -16,15 +16,15 @@ This repository includes a [simple example constructed ahead of time](apidays/ex
 
 ```mermaid
 sequenceDiagram
-    participant FreeClimb as fc
-    participant End User as eu
-    participant Server as s
+    participant fc as FreeClimb
+    participant eu as End User
+    participant s as Server
     eu ->> fc: Customer calls registered FreeClimb number
     fc ->> s: FreeClimb notifies server about incoming call
     s ->> s: Server determines expected action for call
     s ->> fc: Server returns response to FreeClimb request
     fc ->> eu: Accepts call, performs next PerCL action
-    loop Every minute
+    loop Previous PerCL Completed
     fc ->> s: FreeClimb returns result from PerCL, requests new PerCL
     s ->> fc: Server responds with new PerCL
     end
