@@ -32,8 +32,8 @@ sequenceDiagram
 
 ## Useful Links
 
-[FreeClimb Reference Documentation](https://docs.freeclimb.com/reference/api-reference-overview)
-[FreeClimb Python SDK](https://github.com/FreeClimbAPI/python-sdk)
-[FreeClimb Voice Quickstart](https://github.com/FreeClimbAPI/Python-Voice-Quickstart)
-[FreeClimb SMS Quickstart](https://github.com/FreeClimbAPI/Python-SMS-Quickstart)
-[privateGPT Installation](https://docs.privategpt.dev/installation/getting-started/main-concepts)
+- [FreeClimb Reference Documentation](https://docs.freeclimb.com/reference/api-reference-overview)
+- [FreeClimb Python SDK](https://github.com/FreeClimbAPI/python-sdk)
+- [FreeClimb Voice Quickstart](https://github.com/FreeClimbAPI/Python-Voice-Quickstart)
+- [FreeClimb SMS Quickstart](https://github.com/FreeClimbAPI/Python-SMS-Quickstart)
+- [privateGPT Installation](https://docs.privategpt.dev/installation/getting-started/main-concepts)

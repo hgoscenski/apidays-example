@@ -76,7 +76,7 @@ def voice_tu_result():
         ]).to_json()        
     else:
         return freeclimb.PerclScript(commands=[
-            freeclimb.Say(text="Harrison should know better."),
+            freeclimb.Say(text="No transcript found, hanging up."),
             freeclimb.Hangup()
         ]).to_json()
 
@@ -86,16 +86,12 @@ def sms_start():
     question = request.json.get("text")
     response = queryOracle(question)
 
-    # Enter a context with an instance of the API client
     with freeclimb.ApiClient(configuration) as api_client:
-        # Create an instance of the API class
         api_instance = default_api.DefaultApi(api_client)
-        print("sending message")
         message_request = MessageRequest(_from=request.json.get("to"), to=request.json.get("from"), text=response) # MessageRequest | Details to create a message
 
-        # example passing only required values which don't have defaults set
         try:
-            # Send an SMS Message
+            print("sending message")
             api_response = api_instance.send_an_sms_message(message_request)
             pprint(api_response)
         except freeclimb.ApiException as e:
