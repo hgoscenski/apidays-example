@@ -1,4 +1,3 @@
-import requests
 import re
 import os
 from pprint import pprint
@@ -8,6 +7,7 @@ from freeclimb.api import default_api
 from freeclimb.model.message_result import MessageResult
 from freeclimb.model.message_request import MessageRequest
 from flask import Flask, request, jsonify
+import requests
 from dotenv import load_dotenv
 
 # standard Flask setup
